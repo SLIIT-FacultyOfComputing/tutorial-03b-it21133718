@@ -2,7 +2,9 @@
 using namespace std;
 
 void print(int len, int wth);
-void input(int len, int wth);
+
+void input(int &length, int &width);
+
 
 // Do not change the main() function
 int main() {
@@ -14,8 +16,22 @@ int main() {
 
 // Do not change the print() function
 void print(int len, int wth) {
-   cout << "Length : " << len 
-        << ", Width  : " << wth << endl;
+   cout << "Length : " << len <<endl;
+   cout << "Width  : " << wth << endl;
 }
 
 // Implement the Input Function here
+
+//1.Yes
+
+//2.Modify the parameter,length and width as reference type parameters
+
+void input(int &length, int &width)
+{
+  cout<<"Enter length :";
+  cin>>length;
+  
+  cout<<"Enter width :";
+  cin>>width;
+}
+//3.yes
